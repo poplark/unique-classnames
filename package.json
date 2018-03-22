@@ -1,0 +1,25 @@
+{
+  "name": "classnames",
+  "version": "1.0.0",
+  "description": "A simple utility for conditionally joining classNames together, all classNames won't be duplicated.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/poplark/classnames.git"
+  },
+  "keywords": [
+    "css",
+    "classnames",
+    "util",
+    "react"
+  ],
+  "author": "poplark",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poplark/classnames/issues"
+  },
+  "homepage": "https://github.com/poplark/classnames#readme"
+}
