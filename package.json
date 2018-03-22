@@ -4,7 +4,7 @@
   "description": "A simple utility for conditionally joining classNames together, all classNames won't be duplicated.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "node test/index.js",
     "build": "gulp umd"
   },
   "repository": {
