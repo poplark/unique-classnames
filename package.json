@@ -1,6 +1,6 @@
 {
   "name": "unique-classnames",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple utility for conditionally joining classNames together, all classNames won't be duplicated.",
   "main": "lib/index.js",
   "scripts": {
