@@ -1,5 +1,5 @@
 {
-  "name": "uniq-classnames",
+  "name": "unique-classnames",
   "version": "1.0.0",
   "description": "A simple utility for conditionally joining classNames together, all classNames won't be duplicated.",
   "main": "lib/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/poplark/uniq-classnames.git"
+    "url": "git+ssh://git@github.com/poplark/unique-classnames.git"
   },
   "keywords": [
     "css",
@@ -21,10 +21,10 @@
   "author": "poplark",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/poplark/uniq-classnames/issues"
+    "url": "https://github.com/poplark/unique-classnames/issues"
   },
-  "homepage": "https://github.com/poplark/uniq-classnames#readme",
-  "dependencies": {
+  "homepage": "https://github.com/poplark/unique-classnames#readme",
+  "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-umd": "^0.2.1"
   }
