@@ -1,8 +1,8 @@
-Classnames
+Uniq-Classnames
 ===========
 
 ```js
-const classnames = require('classnames');
+const classnames = require('uniq-classnames');
 classnames('foo bar', {foo: true}); // => 'foo bar'
 classnames('foo bar', {foo: false}); // => 'bar'
 

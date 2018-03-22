@@ -1,4 +1,8 @@
-'use strict';
+/*!
+  Copyright (c) 2018 poplark.
+  Licensed under the MIT License (MIT), see
+  https://github.com/poplark/uniq-classnames#readme
+*/
 
 function classNames() {
   let classObj = {},
@@ -47,5 +51,3 @@ function classNames() {
   }
   return classes.join(' ');
 }
-
-module.exports = classNames;
