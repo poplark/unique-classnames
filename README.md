@@ -55,7 +55,7 @@ classnames({'foo bar': true}, {foo: false}, 'foo'); // => 'foo bar'
 ```
 
 All types can be combined with each others. And if there are more than one 'className' with the same name, and the last one will cover the front one. For example:
-```
+```js
 classnames({'foo bar': true}, {foo: false}, 'foo'); // => 'foo bar'
 ```
 The 'foo' of {foo: false} will cover the one in 'foo bar' of {'foo bar': true}, but it will be covered by the last argument 'foo', so the result is {foo: true, bar: true} => 'foo bar'
