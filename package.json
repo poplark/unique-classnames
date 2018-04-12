@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+ssh://git@github.com/poplark/unique-classnames.git"
   },
+  "files": [
+    "lib"
+  ],
   "keywords": [
     "css",
     "classnames",
