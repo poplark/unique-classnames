@@ -1,12 +1,12 @@
 Unique-Classnames
 ===========
 
-English | [简体中文](./README-zh_CN.md)
+[English](./README.md) | 简体中文
 
 
-A simple javascript utility for conditionally joining classNames together, and none of the classNames are duplicated.
+一个用于将 classNames 合并的简单的工具，最重要的是它不会产生重复的 className。
 
-Install with [npm](https://www.npmjs.com/) or [Yarn](https://yarnpkg.com/):
+用 [npm](https://www.npmjs.com/) 或 [Yarn](https://yarnpkg.com/) 进行安装:
 
 npm:
 
@@ -20,9 +20,9 @@ yarn
 yarn add unique-classnames
 ```
 
-## Usage
+## 用法
 
-The arguments can be string, number, array and object.
+参数可以是 string, number, array 和 object 类型。
 
 string:
 
@@ -63,11 +63,11 @@ classnames({'foo bar': true}, {bar: false}); // => 'foo'
 classnames({'foo bar': true}, {foo: false}, 'foo'); // => 'foo bar'
 ```
 
-All types can be combined with each others. And if there are more than one 'className' with the same name, and the last one will cover the front one. For example:
+所有的 classNames 会被合并，如果相同的 className 多于一个，那么后面的会覆盖前面的，最后重复的会被去掉，仅保留一个，例如：
 
 ```js
 classnames({'foo bar': true}, {foo: false}, 'foo'); // => 'foo bar'
 ```
 
-The 'foo' of {foo: false} will cover the one in 'foo bar' of {'foo bar': true}, but it will be covered by the last argument 'foo', so the result is {foo: true, bar: true} => 'foo bar'
+{foo: false} 里的 'foo' 会覆盖掉 {'foo bar': true} 里的 'foo'，但是，最终也会被最后的那个参数 'foo' 覆盖，所以结果会是 {foo: true, bar: true} => 'foo bar'。
 
