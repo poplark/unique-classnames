@@ -12,7 +12,9 @@
     "url": "git+ssh://git@github.com/poplark/unique-classnames.git"
   },
   "files": [
-    "lib"
+    "lib",
+    "README.md",
+    "README-zh_CN.md"
   ],
   "keywords": [
     "css",
