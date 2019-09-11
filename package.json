@@ -18,9 +18,12 @@
   ],
   "keywords": [
     "css",
+    "classes"
+    "classname",
     "classnames",
     "unique",
     "util",
+    "utility",
     "react"
   ],
   "author": "poplark",
