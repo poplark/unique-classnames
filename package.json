@@ -3,6 +3,7 @@
   "version": "1.0.6",
   "description": "A simple utility for conditionally joining classNames together, all classNames won't be duplicated.",
   "main": "lib/index.js",
+  "types": "types",
   "scripts": {
     "test": "node test/index.js",
     "build": "gulp umd"
@@ -13,6 +14,7 @@
   },
   "files": [
     "lib",
+    "types",
     "README.md",
     "README-zh_CN.md"
   ],
