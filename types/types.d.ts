@@ -8,6 +8,6 @@ export interface ClassDictionary {
 
 export type ClassValue = string | number | ClassDictionary | Classes | undefined | null | boolean;
 
-export type ClassNamesFn = (...classes: Classes[]) => string;
+export type ClassNamesFn = (...classes: ClassValue[]) => string;
 
 export type ClassNamesExport = ClassNamesFn & { default: ClassNamesFn };
