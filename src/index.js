@@ -1,9 +1,3 @@
-/*!
-  Copyright (c) 2018 poplark.
-  Licensed under the MIT License (MIT), see
-  https://github.com/poplark/unique-classnames#readme
-*/
-
 function classNames() {
   let classObj = {},
     classes = [];

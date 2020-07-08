@@ -27,4 +27,4 @@ node_modules
 
 benchmarks/runInBrowser.bundle.js
 
-yarn.lock
+lib
