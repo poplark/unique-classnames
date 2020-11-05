@@ -12,10 +12,7 @@
     "clean:docs": "rm -rf docs",
     "clean:build": "rm -rf lib && rm -rf types",
     "clean": "npm run clean:docs && npm run clean:build",
-    "prepublish": "npm run clean && npm run build && npm run docs",
-    "bump:patch": "npm version patch && npm run prepublish",
-    "bump:minor": "npm version minor && npm run prepublish",
-    "bump:major": "npm version major && npm run prepublish",
+    "prepare": "npm run clean && npm run build && npm run docs",
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --fix --ext .ts"
   },
