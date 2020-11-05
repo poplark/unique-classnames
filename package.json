@@ -10,9 +10,8 @@
     "test": "node test",
     "docs": "typedoc",
     "clean:docs": "rm -rf docs",
-    "clean:build": "rm -rf lib && rm -rf types",
-    "clean": "npm run clean:docs && npm run clean:build",
-    "prepare": "npm run clean && npm run build && npm run docs",
+    "clean": "rm -rf lib && rm -rf types",
+    "prepare": "npm run clean && npm run build",
     "lint": "eslint src --ext .ts",
     "lint:fix": "eslint src --fix --ext .ts"
   },
@@ -70,6 +69,10 @@
   "lint-staged": {
     "src/**/*.ts": [
       "eslint --fix",
+      "git add"
+    ],
+    "docs": [
+      "npm run clean:docs && npm run docs",
       "git add"
     ]
   }
