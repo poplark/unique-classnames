@@ -25,6 +25,16 @@ node_modules
 # Mac OS X DS_Store
 .DS_Store
 
+# Docs
+docs
+doc
+
+# Builds
+dist
+dest
+build
+lib
+types
+
 benchmarks/runInBrowser.bundle.js
 
-lib
