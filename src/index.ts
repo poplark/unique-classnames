@@ -18,13 +18,13 @@ type FunctionClassNameType = () => any;
 /**
  * classNames 方法参数的复合类型
  */
-type ClassNameType<T extends BasicClassNameType | FunctionClassNameType> = T | T[];
+type ClassNameType = BasicClassNameType | FunctionClassNameType | (BasicClassNameType | FunctionClassNameType)[];
 
 /**
  * @param type -
  * @internal
  */
-function type<T>(type: T): string {
+function type(type: ClassNameType): string {
   const ts = Object.prototype.toString.call(type);
   switch (ts) {
     case '[object String]':
@@ -67,7 +67,7 @@ function objectParser(clz: Record<string, any>): Map<string, boolean> {
  * 将多个 className 进行合并，生成不会重复的 className
  * @param args - 可传入多个且不同类型的 className
  */
-export function classNames<T>(...args: ClassNameType<T>[]): string {
+export function classNames(...args: ClassNameType[]): string {
   const clzMap = new Map<string, boolean>();
   args.forEach((item) => {
     switch (type(item)) {
@@ -80,7 +80,7 @@ export function classNames<T>(...args: ClassNameType<T>[]): string {
         clzMap.set(`${item}`, true);
         break;
       case 'Object':
-        const objClzMap = objectParser(item);
+        const objClzMap = objectParser((item as unknown) as Record<string, any>);
         for (const [k, v] of objClzMap.entries()) {
           clzMap.set(k, v);
         }

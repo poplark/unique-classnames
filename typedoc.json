@@ -5,7 +5,7 @@
   "disableSources": true,
   "excludePrivate": true,
   "excludeProtected": true,
-  "readme": "none",
+  "readme": "README.md",
   "stripInternal": true,
   "excludeNotExported": true
 }
