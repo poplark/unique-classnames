@@ -1,7 +1,7 @@
 /* eslint-disable prettier/prettier */
 /* eslint-disable @typescript-eslint/no-var-requires */
 const assert = require('assert');
-const { classNames } = require('../lib');
+const { classNames } = require('../dist');
 
 // string
 // classNames('foo bar', 'foo2 bar2'); // => 'foo bar foo2 bar2'
